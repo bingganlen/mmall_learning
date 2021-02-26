@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">温湿度标签</string>
+    <string name="home_bar">温湿度标签</string>
+    <string name="failure">保存失败，货物单号只能为数字或者字母</string>
+    <string name="waybillNB">货物单号</string>
+    <string name="config_waybillNB">货物单号：</string>
+    <string name="waybillNBTips">不能超过20个字符</string>
+    <string name="waybillTime">运单时间：</string>
+    <string name="waybillCreator">创     建    人  ：</string>
+    <string name="shipAddress">发货地址：</string>
+    <string name="receiptAddress">收货地址：</string>
+    <string name="delayTime">延迟时间：</string>
+    <string name="intervalSamp">采样间隔时间</string>
+    <string name="config_intervalSamp">采样间隔时间*：</string>
+    <string name="MaxIntervalSamp">不能超过255</string>
+    <string name="MinIntervalSamp">采样间隔不能小于1</string>
+    <string name="noNullTips">不能为空</string>
+    <string name="noUp">不得高于</string>
+    <string name="charNb">个字符</string>
+    <string name="MaxTemp">温度警戒上限</string>
+    <string name="config_MaxTemp">温度警戒上限*：</string>
+    <string name="MaxTempColon">温度警戒上限：</string>
+    <string name="MaxTempValues">不得高于60℃</string>
+    <string name="MaxMinTempValues">不得低于-20℃</string>
+    <string name="MinTemp">温度警戒下限</string>
+    <string name="config_MinTemp">温度警戒下限*：</string>
+    <string name="MinTempColon">温度警戒下限：</string>
+    <string name="MinTempValues">不得高于60℃</string>
+    <string name="MinMinTempValues">不得低于-20℃</string>
+    <string name="MinTempBigMaxTemp">温度下限>上限,</string>
+    <string name="maxHumidity">湿度警戒上限</string>
+    <string name="config_maxHumidity">湿度警戒上限*：</string>
+    <string name="maxHumidityColon">湿度警戒上限：</string>
+    <string name="MaxHumidityValues">不能大于100</string>
+    <string name="MinBigMaxHumidity">下限不能大于上限</string>
+    <string name="cannotSmall">不得低于</string>
+    <string name="cannotBig">不得高于</string>
+    <string name="currentValues">，当前：</string>
+    <string name="minHumidity">湿度警戒下限</string>
+    <string name="config_minHumidity">湿度警戒下限*：</string>
+    <string name="minHumidityColon">湿度警戒下限：</string>
+    <string name="maxSamplingTime">最大采样次数 ：</string>
+    <string name="MaxSamplingTimeError">采样次数不能超过500000</string>
+    <string name="FormatError">格式错误</string>
+    <string name="cancel">取消</string>
+    <string name="makeCard">开始配置</string>
+    <string name="configParameter">配置参数</string>
+    <string name="configErrorToast">写入温度标签配置参数有错误，请修改参数</string>
+    <string name="editFileName">温度标签</string>
+    <string name="versionUpdate">版本更新</string>
+    <string name="useExplanation">使用说明</string>
+    <string name="NfcTag">NFC标识</string>
+    <string name="about_setting">设置</string>
+    <string name="configHistory">配置记录</string>
+    <string name="configTime">配置时间</string>
+    <string name="configTimeColon">配置时间：</string>
+    <string name="howMakeCard">如何查看温湿度曲线图？</string>
+    <string name="howReadData">如何配置温湿度标签参数并制作标签？</string>
+    <string name="tabConnect">连接</string>
+    <string name="configNewLabel">配置</string>
+    <string name="tabSearch">查询</string>
+    <string name="tabCloud">云</string>
+    <string name="tabUs">我们</string>
+
+    <string name="makeConfigFile">配置新标签</string>
+    <string name="fragment_attach_nfc_tips">请将NFC温度标签贴近手机</string>
+    <string name="dialog_connect_type_title">连接选项</string>
+    <string name="loading">请将温度标签贴近手机</string>
+    <string name="tips">提示</string>
+    <string name="nonsupport_nfc">该手机不支持NFC！</string>
+    <string name="confirm">确定</string>
+    <string name="open_nfc">请到设置中开启NFC！</string>
+    <string name="open_ble">请打开蓝牙</string>
+    <string name="open">打开</string>
+    <!-- bar code-->
+    <string name="scan_failed">条形码扫描失败!</string>
+    <string name="WillNb">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+    <!-- config default label settingBytes-->
+    <string name="default_setting_interval">15</string>
+    <string name="default_setting_samp_times">800</string>
+    <string name="default_setting_max_temp">35</string>
+    <string name="default_setting_min_temp">-10</string>
+    <string name="default_setting_max_humidity">90</string>
+    <string name="default_setting_min_humidity">30</string>
+
+    <string name="min">分钟</string>
+    <string name="hour">小时</string>
+    <string name="day">天</string>
+    <string name="tempUnit"> ℃</string>
+    <string name="tempFahrenheitUnit">℉</string>
+    <string name="humidityUnit">%RH</string>
+    <string name="howFindExcel">如何找到导出到Excel文档的温湿度标签数据？</string>
+    <string name="howUseHardware">如何使用温湿度标签？</string>
+
+    <string name="activity_about_ico">©2019 Megain Corporation</string>
+    <string name="sampTemp">采集温度</string>
+    <string name="sampHumidity">采集湿度</string>
+    <string name="config_delayBoot">延迟启动：</string>
+    <string name="config_delayBootTime">启动时间：</string>
+    <string name="companyName">公司名称：</string>
+    <string name="produceName">产品名称：</string>
+    <string name="remarkInfo">备注：</string>
+    <string name="remarkTips">请输入备注信息</string>
+    <string name="waybillNB2">货物单号：</string>
+    <string name="label_id">标签ID号：</string>
+    <string name="label_nickname">标签名：</string>
+    <string name="CreateDate">创建时间：</string>
+    <string name="exitToast">再按一次退出程序</string>
+    <string name="tempLine">温度</string>
+    <string name="start">起：</string>
+    <string name="stop">止：</string>
+    <string name="successTempDataToExcel">文件导出成功！</string>
+    <string name="noTempDataToExcel">没有温度数据可导出！</string>
+    <string name="upWarningCap">警戒上限</string>
+    <string name="lowWarningCap">警戒下限</string>
+    <string name="humidityLine">湿度</string>
+    <string name="successHumidityDataToExcel">导出湿度数据完成！</string>
+    <string name="noHumidityDataToExcel">没有湿度数据可导出！</string>
+    <string name="useHelp">使用帮助</string>
+    <string name="tempData">Temp data</string>
+    <string name="humidityData">Humidity data </string>
+    <string name="dataNb">数据点数</string>
+    <string name="dataTime">记录时间</string>
+    <string name="successConfig">配置成功！</string>
+    <string name="successConfigFinish">配置完成！</string>
+    <string name="successTips">标签红灯亮5秒，生效新配置</string>
+    <string name="IKnow">我知道了</string>
+    <string name="phoneBack">手机背面</string>
+    <string name="NfcLocation">NFC所在位置</string>
+    <string name="readDataTips">读数据中，请勿移开标签…</string>
+    <string name="firstFew">第</string>
+    <string name="nbHumidity">个点湿度</string>
+    <string name="time">时间：</string>
+    <string name="nbTemp">个点</string>
+    <string name="humidityDataToExcel">导出数据</string>
+    <string name="interval">采样间隔：</string>
+    <string name="upWarning">警戒上限：</string>
+    <string name="lowWarning">警戒下限：</string>
+    <string name="tempDataToExcel">导出数据</string>
+    <string name="lookHumidityLine">查看湿度曲线</string>
+    <string name="camera">请允许访问摄像头后重试</string>
+    <string name="barCode">将条形码放入框内，即可自动扫描</string>
+    <string name="scanIt">扫一扫</string>
+    <string name="sure">确定</string>
+    <string name="cameraMessage">请在系统设置中为App开启摄像头权限后重试</string>
+    <string name="currentTime">当前时间</string>
+    <string name="deleteCardTips">是否删除标签缓存</string>
+    <string name="deleteLabelConfigHisTips">是否删除标签配置记录？</string>
+    <string name="noNfcTips">无此机型NFC天线位置信息</string>
+    <string name="exportData">正在导出数据</string>
+    <string name="noChartDataTips">无数据，请先采集！</string>
+    <string name="loadingChartData">正在加载数据…</string>
+    <string name="group">组</string>
+    <string name="nonsupport_label_tips">不支持此标签，请更换</string>
+    <string name="nonsupport_phone_ble_version_low">手机的蓝牙版本太低，低于4.2</string>
+    <string name="have_not_card_setting">卡片无温湿度配置</string>
+    <string name="DetailedData">查看详细曲线</string>
+    <string name="configFailedTips">配置失败，请重试</string>
+    <string name="configFailedTitle">配置失败</string>
+    <string name="tryAgain">重试</string>
+    <string name="FirmwareInfoTips">固件信息</string>
+    <string name="useExplanationTips">使用说明</string>
+    <!--<string name="FirmUseTips">温馨提示：请贴卡获取固件信息。</string>-->
+    <string name="firmVersion">固件版本：</string>
+    <string name="maxRoom">最大容量：</string>
+    <string name="transmit">最大速率：</string>
+    <string name="hardwareVersion">硬件版本：</string>
+    <string name="stcFirmwareVersion">单片机版本：</string>
+    <string name="electricity">电量状态：</string>
+    <string name="getPowerFailedTips">电量获取失败，请重试！</string>
+    <!--2017/10//20 add-->
+    <string name="dialogCoverConfigTipsTitle">提示</string>
+    <string name="dialogCoverConfigContent">标签已有配置信息，是否覆盖？</string>
+    <string name="dialogCoverConfigConfirm">覆盖</string>
+    <string name="dialogCoverConfigCancel">取消配置</string>
+    <!--2017/10//27 add-->
+    <string name="noSelectTips">未选中标签</string>
+    <string name="delete">删除</string>
+    <string name="selectAll">全选</string>
+    <string name="clear">清除</string>
+    <string name="CardsDeleted">标签已删除</string>
+    <!--2017/11//02 add-->
+    <string name="deletingLabels">正在删除标签</string>
+    <string name="deletingTemplateHis">正在删除模板</string>
+    <!--2017/11//08 add-->
+    <string name="read_pause">已暂停，请贴标签…</string>
+    <!--2017/11//27 add-->
+    <string name="dialog_btn_cancel">取消</string>
+    <string name="write_end_back">完成</string>
+    <string name="write_retry">再写一张</string>
+    <string name="writted">制作成功（100%）</string>
+    <string name="writting">制作中(%s)</string>
+    <string name="read_card_hold_least_time">剩余时间</string>
+    <string name="msg_card_reader_connect">正在连接读卡器&#8230;</string>
+    <string name="deleteContent">您确定要删除？</string>
+    <string name="input_more_than_limit">你输入的字数已经超过了限制！</string>
+    <string name="card_name_not_avaliable">输入的标签名称不规范!</string>
+    <string name="wifi_can_not_connect">读卡器连接失败，是否重新连接？</string>
+    <string name="wifi_disconnected">读卡器已断开连接</string>
+    <string name="reader_reconnect">重新连接</string>
+    <string name="card_reader_conn_cancel">取消连接</string>
+    <string name="no_available_wifi">没有检测到读卡设备，请开启！</string>
+    <string name="scan_wifi">正在扫描WiFi&#8230;</string>
+    <string name="serviceId">服务器地址</string>
+    <!--<string name="upLoad">上传</string>-->
+    <string name="wifi_connected">读卡器成功连接</string>
+    <string name="card_close_hint_phone">请将温度标签紧贴手机</string>
+    <string name="card_close_hint_reader">请将温度标签紧贴读卡器</string>
+    <string name="IDTips">请输入ID</string>
+    <string name="serviceIDTips">请输入服务器地址</string>
+    <string name="mainactivity_dialog_set_nfc_title">您还没有开启NFC，是否跳转去开启?</string>
+    <string name="mainactivity_dialog_open">去设置</string>
+    <string name="mainactivity_dialog_cancel">取消</string>
+    <!--2017/11//27 add-->
+    <string name="management">管理</string>
+    <string name="tvReturn">取消</string>
+    <!--cloud-->
+    <string name="upload_commit">提交</string>
+    <string name="upload_commit_hit">请输入服务器地址</string>
+    <string name="upload_username">请输入ID</string>
+    <string name="upload_prossing">上传中</string>
+    <string name="upload_success">上传成功！</string>
+    <string name="upload_success_content">可前往温湿度物联网管理系统查看纪录详情。</string>
+    <string name="upload_fail">上传失败！</string>
+    <string name="upload_fail_content">温湿度记录数据上传失败，请尝试重新上传。</string>
+    <string name="upload">上传</string>
+    <string name="upload_load_label_amount">读取标签总数：</string>
+    <string name="upload_success_amount">上传成功总数：</string>
+    <string name="upload_progress_amount">正在上传总数：</string>
+    <string name="upload_failed_amount">上传失败总数：</string>
+    <string name="upload_header_no_upload">未上传</string>
+    <string name="upload_header_upload_progress">正在上传</string>
+    <string name="upload_header_upload_success">上传成功</string>
+    <string name="upload_header_upload_failed">上传失败</string>
+    <string name="upload_success_delete_title">删除上传记录</string>
+    <string name="upload_success_delete_tips_content">是否删除上传记录</string>
+    <string name="upload_success_delete_cancel">取消</string>
+    <string name="upload_success_delete_delete">删除</string>
+    <string name="upload_success_delete_success">删除成功</string>
+
+    <!--cloud-->
+    <string name="temp_only_tips">此标签为单温度标签，将不会采集湿度数据…"</string>
+
+    <string name="us_about">关于</string>
+    <string name="feed_back_1">感谢您的关注!如果您有任何问题、建议、想法</string>
+    <string name="feed_back_2">请拨打电话:</string>
+    <string name="feed_back_3">0756–3333768</string>
+    <string name="feed_back_4">或者发送到邮箱:</string>
+    <string name="feed_back_5">info@ApexMic.com</string>
+
+    <string name="ReadData">NFC如何读取温湿度标签数据?</string>
+    <string name="ReadData_wifi">WIFI如何读取温湿度标签数据?</string>
+
+
+    <string name="help_item_1_1">1.进入APP首页，NFC模式下，将温湿度标签紧贴手机NFC标志区域，读取温湿度标签数据。</string>
+    <string name="help_item_1_2">①图标为绿色，代表采集到的温湿度数据正常，数据没有超出配置文件中的配置参数；</string>
+    <string name="help_item_1_3">②图标为红色，代表采集到的温湿度数据异常，数据超出配置文件中的配置参数；</string>
+    <string name="help_item_1_4">2.读取完成后点击右上角“管理”，可以删除、上传数据和导出数据。</string>
+    <string name="help_item_1_5">③数据上传成功后，可以前往温湿度物联网管理系统查看相关记录。</string>
+    <string name="help_item_2_1">1.进入APP首页，切换成Wi-Fi模式，在弹出的WIFI列表中，连接与读卡器相对应的wifi。</string>
+    <string name="help_item_2_2">2.Wi-Fi连接成功后，返回APP，将温湿度标签贴近读卡器，读取数据。</string>
+    <string name="help_item_3_1">1.点击首页中读取到的温湿度标签数据，进入温湿度曲线图页面。</string>
+    <string name="help_item_3_2">2.点击“固件信息”查看相关的硬件信息；点击“查看详细曲线”查看局部详细的曲线图；点击“导出数据”，保存温湿度数据到本地Excel文档中。</string>
+    <string name="help_item_4_1">1.进入配置页面可以配置新标签或者点击历史配置记录中的标签重新配置。</string>
+    <string name="help_item_4_2">2.进入配置参数页面配置参数。</string>
+    <string name="help_item_4_3">①带“*”号为必填。</string>
+    <string name="help_item_5_1">1.在温湿度标签曲线页面点击“导出数据”，并显示“文件导出成功”\n目录：/内部存储/Temp&#038;Hum Record Label/”，表示成功导出温湿度数据到CSV文档中。</string>
+    <string name="help_item_5_2">2.在“Temp&#038;Hum Record Label”文件夹中找到温湿度标签对应的文件夹，文件夹以标签ID命名，在文件夹中根据标签ID找到对应导出的温湿度数据的CSV文件。</string>
+
+
+    <string name="current_new">已是最新版本</string>
+    <string name="newVersion">最新版本为</string>
+    <string name="get_server_fail">获取服务器更新信息失败</string>
+    <string name="get_server_fail1">当前版本为：</string>
+    <string name="down_fail">下载新版本失败</string>
+    <string name="start_update">开始下载</string>
+    <string name="downloading">下载中</string>
+    <string name="download_finish">下载完成</string>
+
+    <!--20171213 -->
+    <string name="firmwareInfo">固件信息</string>
+    <string name="powerException">电量缓存失败</string>
+    <string name="wifiModeAttachLabel">当前为WIFI读取模式，请使用读卡器进行读卡</string>
+    <string name="bleModeAttachLabel">当前为BLE读取模式</string>
+    <!--20171213 -->
+    <string name="upAppTips">当前硬件版本太高，请升级当前APP</string>
+    <string name="fragment_attach_ble_tips">连接BLE成功后读取标签</string>
+    <!--20171226 -->
+    <string name="wifiLoadingTips">请将温度标签紧贴读卡器</string>
+    <string name="colon">：</string>
+    <string name="temp">温度：</string>
+    <string name="humidity">湿度：</string>
+    <string name="chartStartEnd">温湿度曲线起止时间：</string>
+    <!--2017/12/29-->
+    <string name="directory">目录：</string>
+    <string name="internalStorage">/内部存储</string>
+    <!--2018/1/18-->
+    <string name="company">公司：</string>
+    <string name="megain">珠海美佳音科技有限公司</string>
+    <string name="address">地址：</string>
+    <string name="megainAddress">广东省珠海市华威路115号信远大厦A座3楼</string>
+    <string name="internet">网址：</string>
+    <string name="contact">联系人：</string>
+    <string name="telephone">电话：</string>
+    <string name="Email">邮箱：</string>
+    <string name="mobilePhone">手机/微信：</string>
+
+    <!--导出 Doc-->
+    <string name="csvCardSettingTitle">标签配置信息</string>
+    <string name="csvDataNb">数据点数</string>
+    <string name="csvTime">时间</string>
+    <string name="csvTemp">温度</string>
+    <string name="csvHumidity">湿度(%)</string>
+    <!--<string name="ExportCards">确定要导出选中的标签吗？</string>-->
+    <string name="export">导出</string>
+    <string name="byteFile">二进制文件</string>
+    <string name="excel">Excel</string>
+    <string name="excel_share">Excel并分享</string>
+    <string name="excel_share_pdf">PDF并分享</string>
+    <string name="excel_export_pdf">PDF</string>
+    <string name="share">分享</string>
+    <string name="export_on_export_chart_file">正在导出曲线图</string>
+    <string name="exportSuccess">文件导出成功</string>
+    <string name="exportFailed">未知错误，文件导出失败</string>
+    <string name="export_title_head">PDF导出</string>
+    <!--导出 Doc-->
+
+
+    <string name="QRToast">条形码格式不正确，请扫描标签条形码</string>
+    <!--BLE-->
+    <string name="scan_ble">正在扫描蓝牙&#8230;</string>
+    <string name="scan_ble_trigger">释放开始扫描蓝牙</string>
+    <string name="scan_ble_last_time">上次扫描 M-d HH:mm</string>
+    <string name="scan_ble_scan_finished">扫描完成</string>
+    <string name="scan_ble_scan_failed">没有发现BLE温湿度标签</string>
+    <string name="fragment_ble_tips">连接蓝牙读取读取温湿度数据</string>
+    <string name="fragment_ble_scan_label_name">标签名：</string>
+    <string name="fragment_ble_scan_label_id">标签ID：</string>
+    <string name="fragment_ble_scan_label_rssi">BLE Rssi：</string>
+    <string name="ble_disconnected">已断开连接</string>
+    <string name="ble_can_not_connect">蓝牙连接失败，是否重新连接？</string>
+    <string name="ble_connecting">正在连接</string>
+    <string name="ble_connected">蓝牙成功连接</string>
+    <string name="ble">蓝牙</string>
+    <string name="ble_connect_exception">蓝牙连接异常</string>
+    <string name="ble_write_th_setting">正在配置</string>
+
+    <string name="title_config_edit_his">配置记录</string>
+    <string name="config_ble_scan_label_id">标签ID：</string>
+    <string name="config_le_scan_title">蓝牙扫描</string>
+    <string name="config_le_scan_label_number">标签序号：</string>
+    <string name="config_le_scan_label_rssi">信号强度：</string>
+    <string name="no_ble_label_cached">连接蓝牙读取温湿度数据</string>
+
+    <string name="le_config_success_tips">配置成功，新配置已生效</string>
+    <string name="le_config_has_failed_tips">有标签配置失败，请检查</string>
+
+    <!-- Strings related to login -->
+    <string name="title_activity_login">Sign in</string>
+    <string name="login_user_id_manage">账号管理</string>
+    <string name="prompt_phone_number">手机号</string>
+    <string name="prompt_password">密码</string>
+    <string name="prompt_check_password">再次确认密码</string>
+    <string name="prompt_verify_code">验证码</string>
+    <string name="action_sign_in_manage">账号管理</string>
+    <string name="action_sign_in">登录</string>
+    <string name="action_sign_out">退出登录</string>
+    <string name="action_sign_up">注册</string>
+    <string name="action_sign_retrieve_password">找回密码</string>
+    <string name="action_sign_in_phone">手机登录</string>
+    <string name="action_sign_user_name">用户名登录</string>
+    <string name="action_sign_in_short">登录</string>
+    <string name="error_invalid_phone_number">手机号无效</string>
+    <string name="error_invalid_user_name">用户名无效</string>
+    <string name="error_invalid_user_id">账号不存在</string>
+    <string name="error_invalid_password">密码只允许字符和数字</string>
+    <string name="error_invalid_verify_code">验证码只允许数字</string>
+    <string name="error_inconsistent_password">密码不一致</string>
+    <string name="error_incorrect_password">密码错误</string>
+    <string name="error_field_required">不能为空</string>
+    <string name="error_user_not_exist">用户不存在</string>
+    <string name="error_verify_outmoded">验证码过期</string>
+    <string name="error_verify_incorrect">验证码不正确</string>
+    <string name="error_modify_pwd_failed">修改密码失败</string>
+    <string name="error_invalid_network">当前网络不可用，请检查您的网络设置</string>
+    <string name="sign_user_id_title">账号：</string>
+    <string name="tips_wait_a_second">请等待</string>
+    <string name="error_id_existed">用户已存在</string>
+    <string name="error_phone_not_exists">手机号不存在</string>
+    <string name="error_sign_up_failed">注册失败</string>
+    <string name="user_info_title">个人信息</string>
+    <string name="get_verify_code_again">重新获取</string>
+    <string name="sign_sign_up_verify_code">获取验证码</string>
+    <string name="sign_sign_up_user_name">用户名</string>
+    <string name="sign_sign_manage_user_name">用户名</string>
+    <string name="sign_sign_manage_account">账号</string>
+    <string name="sign_sign_manage_registration_time">注册时间</string>
+    <string name="sign_sign_in_time">登录时间</string>
+    <string name="sign_retrieve_pwd">确定</string>
+    <!--to login -->
+
+    <!--App upgrade-->
+    <string name="strToastYourAreTheLatestVersion">你已经是最新版了</string>
+    <string name="label_upload_title">标签上传</string>
+    <string name="upload_too_frequently">上传过频繁</string>
+    <string name="upload_label_already_claim">标签已有归属</string>
+
+    <!--    setting-->
+    <string name="title_activity_settings">设置</string>
+    <string name="settings_Done">完成</string>
+    <string name="settings_language_temp_display">温度显示</string>
+    <string name="settings_fahrenheit">华氏度</string>
+    <string name="settings_centigrade">摄氏度</string>
+    <string name="settings_language_setting">语言设置</string>
+    <string name="settings_upload_auto">数据自动上传到云端</string>
+    <string name="settings_custom_cloud">自定义服务器</string>
+    <!--    setting-->
+
+
+    <!--time selector-->
+    <string name="select_cancel">取消</string>
+    <string name="select_time_tips">请选择时间</string>
+    <string name="select_sure_select">确定</string>
+    <string name="select_unit_year">年</string>
+    <string name="select_unit_month">月</string>
+    <string name="select_unit_day">日</string>
+    <string name="select_unit_hour">时</string>
+    <string name="select_unit_minute">分</string>
+    <!--barcode scan-->
+    <integer name="viewfinder_border_width">4</integer>
+    <integer name="viewfinder_border_length">60</integer>
+
+    <string name="labelSortUp">顺序排列</string>
+    <string name="labelSortDown">倒序排列</string>
+
+    <string name="search_label"> 搜索标签</string>
+    <string name="sort_label_id">标签ID号</string>
+    <string name="sort_create_date">创建时间</string>
+    <string name="sort_waybill_NB">货物单号</string>
+    <string name="sort_waybill_time">运单时间</string>
+    <!--search label-->
+    <string name="search_search_label">搜索</string>
+    <string name="search_label_title">标签查询</string>
+    <string name="search_label_hint"> 输入标签ID搜索</string>
+    <string name="search_label_label_id">标签ID：</string>
+    <string name="search_label_label_name">标签名：</string>
+    <string name="search_label_waybill_num">货单号：</string>
+    <string name="search_label_create_time">创建时间：</string>
+    <string name="search_label_last_record_time">最后记录时间：</string>
+    <string name="search_label_collect_frequency">采样间隔：</string>
+    <string name="search_label_config_date">配置时间：</string>
+    <string name="search_label_result_title">查询结果</string>
+    <!--search label-->
+    <string name="label_data_download_fail">数据下载失败</string>
+    <string name="search_label_has_not">无此标签记录</string>
+    <string name="label_work_info_synchronized">标签数据同步成功</string>
+
+    <string name="pdf_title">记录简要</string>
+    <string name="pdf_label_record_info">标签记录简要</string>
+    <string name="pdf_start_record_date">开始记录时间：</string>
+    <string name="pdf_last_record_date">最后记录时间：</string>
+    <string name="pdf_export_date">文档导出时间：</string>
+    <string name="pdf_all_record_time">采集总时长：</string>
+    <string name="pdf_record_amount">记录数据点数：</string>
+    <string name="pdf_record_amount_unit">个</string>
+    <string name="pdf_label_type">标签类型：</string>
+    <string name="pdf_highest_temp">最高温度：</string>
+    <string name="pdf_lowest_temp">最低温度：</string>
+    <string name="pdf_over_temp_limit">温度高于警戒时间：</string>
+    <string name="pdf_under_temp_limit">温度低于警戒时间：</string>
+    <string name="pdf_highest_humidity">最高湿度：</string>
+    <string name="pdf_lowest_humidity">最低湿度：</string>
+    <string name="pdf_over_hum_limit">湿度高于警戒时间：</string>
+    <string name="pdf_under_hum_limit">湿度低于警戒时间：</string>
+
+    <string name="file_share_csv_title">温湿度标签数据分享</string>
+    <string name="file_share_csv_tips_content">温湿度数据CSV文件见附件</string>
+    <string name="file_share_pdf_title">温湿度记录文档分享</string>
+    <string name="file_share_pdf_tips_content">温湿度记录PDF文件见附件</string>
+
+    <string name="connect_ble_scan">蓝牙扫描</string>
+    <string name="connect_title_read">读取</string>
+    <string name="connect_title_config">配置</string>
+
+    <!--template↓-->
+    <string name="template_save_template">保存模板</string>
+    <string name="template_config_template_to_label">确认配置</string>
+    <string name="template_template_select">模板选择</string>
+    <string name="template_para_must_title">设备配置：（必填*）</string>
+    <string name="template_boot_type_title">启动方式：</string>
+    <string name="template_record_delay_title">采集延时：</string>
+    <string name="template_boot_delay_title">启动延时：</string>
+    <string name="template_boot_type_btn">按键启动</string>
+    <string name="template_boot_type_soft">软件启动</string>
+    <string name="template_warning_title">报警延时：</string>
+    <string name="template_warning_type_title">报警类型：</string>
+    <string name="template_warning_type_single">单一</string>
+    <string name="template_warning_type_accumulate">累计</string>
+    <string name="template_report_language_title">报告语言：</string>
+    <string name="template_report_language_zh">中文</string>
+    <string name="template_report_language_en">英文</string>
+    <string name="template_keep_ble_on_title">蓝牙保持开启：</string>
+
+    <string name="template_para_option_title">货物配置：（选填）</string>
+    <string name="template_label_name_title">标签名称：</string>
+    <string name="template_box_nb_title">货物箱号：</string>
+    <string name="template_produce_intro_title">货物描述：</string>
+    <string name="template_sender_title">发货人：</string>
+    <string name="template_receiver_title">收货人：</string>
+
+    <string name="template_cargo_config_title">货物配置：（选填）</string>
+
+    <string name="template_list_title">模板</string>
+    <string name="template_save_item_new">保存到新模板</string>
+    <string name="template_save_item_update">更新到当前模板</string>
+    <string name="template_save_new">已保存为新模板</string>
+    <string name="template_save_update">已更新模板</string>
+    <string name="template_template_existed">模板名已存在</string>
+    <string name="template_template_name_not_empty">不能为空</string>
+    <string name="template_template_delete_title">删除模板</string>
+    <string name="template_template_delete_tips_content">是否删除模板</string>
+    <string name="template_template_delete_cancel">取消</string>
+    <string name="template_template_delete_delete">删除</string>
+    <string name="template_template_delete_success">删除成功</string>
+    <string name="template_new_template_name_title">模板名称：</string>
+    <string name="template_new_template_intro_title">模板简介：</string>
+    <string name="template_template_history_delete_guide">长按列表删除已保存的模板</string>
+    <string name="template_template_history_delete_guide_know">我知道了</string>
+    <!--template↑-->
+
+    <!--statistics-->
+    <string name="statistics_tab_detail">详细信息</string>
+    <string name="statistics_tab_chart">曲线图</string>
+    <string name="statistics_tab_report">报告</string>
+
+    <string name="chart_temp_max">最大值</string>
+    <string name="chart_temp_min">最小值</string>
+    <string name="chart_temp_average">平均值</string>
+    <string name="chart_temp_mtk">MKT</string>
+    <string name="chart_hum_max">最大值</string>
+    <string name="chart_hum_min">最小值</string>
+    <string name="chart_hum_average">平均值</string>
+
+    <string name="report_export_chart_png_finish">导出曲线图成功</string>
+    <!--statistics-->
+
+
+    <!--    label search-->
+    <string name="search_action_search">搜索</string>
+    <string name="search_action_search_result_local_title">本地标签</string>
+    <string name="search_action_result_remote_title">已上传的标签</string>
+
+
+    <!--statistics-->
+    <string name="statistics_warning_type">报警类型</string>
+    <string name="statistics_warning_count">共计</string>
+    <string name="statistics_warning_first_time">首次时间</string>
+    <string name="statistics_warning_count_time">总计时长</string>
+    <string name="statistics_warning_status">报警状态</string>
+    <string name="statistics_mark_num">编号</string>
+    <string name="statistics_mark_time">时间</string>
+    <string name="statistics_mark_temp">温度</string>
+    <string name="statistics_mark_hum">湿度</string>
+    <string name="statistics_result_normal">数据正常</string>
+    <string name="statistics_result_warning">数据报警</string>
+    <string name="statistics_result_empty">数据为空</string>
+    <string name="statistics_temp">温度</string>
+    <string name="statistics_temp_hum">温湿度</string>
+    <string name="statistics_label_id">标签ID</string>
+    <string name="statistics_label_name">标签名称</string>
+    <string name="statistics_label_firm_version">标签版本</string>
+    <string name="statistics_label_sensor_type">传感器类型</string>
+
+    <string name="statistics_label_set_boot_type">启动方式</string>
+    <string name="statistics_label_set_boot_delay">启动延时</string>
+    <string name="statistics_label_set_record_delay">采集延时</string>
+    <string name="statistics_label_set_record_frequency">记录间隔</string>
+    <string name="statistics_label_set_stop_type">停止方式</string>
+    <string name="statistics_label_set_warn_type">报警类型</string>
+    <string name="statistics_label_set_warn_delay">报警延时</string>
+    <string name="statistics_label_set_report_language">报告语言</string>
+    <string name="statistics_label_set_temp_upper_limit">温度上限</string>
+    <string name="statistics_label_set_temp_lower_limit">温度下限</string>
+    <string name="statistics_label_set_hum_upper_limit">湿度上限</string>
+    <string name="statistics_label_set_hum_lower_limit">湿度下限</string>
+    <string name="statistics_label_set_keep_ble_title">蓝牙保持开启</string>
+    <string name="statistics_label_set_keep_ble_true">是</string>
+    <string name="statistics_label_set_keep_ble_false">否</string>
+    <string name="statistics_label_set_boot_type_btn">按键启动</string>
+    <string name="statistics_label_set_boot_type_soft">软件启动</string>
+    <string name="statistics_label_set_stop_type_hand">手动停止</string>
+    <string name="statistics_label_set_stop_type_soft">软件停止</string>
+    <string name="statistics_label_set_warn_type_single">单一</string>
+    <string name="statistics_label_set_warn_type_accumulate">累加</string>
+    <string name="statistics_label_set_report_language_cn">中文</string>
+    <string name="statistics_label_set_report_language_en">英文</string>
+    <string name="statistics_label_set_no_data">无数据</string>
+
+    <string name="statistics_info_temp_max">温度最大值</string>
+    <string name="statistics_info_temp_min">温度最小值</string>
+    <string name="statistics_info_temp_average">温度平均值</string>
+    <string name="statistics_info_temp_mtk">温度MKT</string>
+    <string name="statistics_info_hum_max">湿度最大值</string>
+    <string name="statistics_info_hum_min">湿度最小值</string>
+    <string name="statistics_info_hum_average">湿度平均值</string>
+    <string name="statistics_info_record_time">记录时长</string>
+    <string name="statistics_info_record_amount">记录条数</string>
+    <string name="statistics_info_record_start_time">开始时间</string>
+    <string name="statistics_info_record_stop_time">停止时间</string>
+
+    <string name="statistics_append_company">公司名称</string>
+    <string name="statistics_append_cargo_number">货物单号</string>
+    <string name="statistics_append_cargo_box_nb">货物箱号</string>
+    <string name="statistics_append_cargo_description">货物描述</string>
+    <string name="statistics_append_sender">发货人</string>
+    <string name="statistics_append_receiver">收货人</string>
+    <string name="statistics_append_send_address">发货地址</string>
+    <string name="statistics_append_ship_to">收货地址</string>
+    <string name="statistics_append_remark">备注</string>
+
+    <string name="statistics_warn_title">报警类型</string>
+    <string name="statistics_warn_amount">共计</string>
+    <string name="statistics_warn_first_time">首次时间</string>
+    <string name="statistics_warn_amount_time">总计时长</string>
+    <string name="statistics_warn_status">报警状态</string>
+    <string name="statistics_warn_temp_upper_limit">温度上限</string>
+    <string name="statistics_warn_temp_lower_limit">温度下限</string>
+    <string name="statistics_warn_hum_upper_limit">湿度上限</string>
+    <string name="statistics_warn_hum_lower_limit">湿度下限</string>
+    <string name="statistics_warn_normal">正常</string>
+    <string name="statistics_warn_warning">报警</string>
+
+    <string name="statistics_warn_number">序号</string>
+    <string name="statistics_warn_time">时间</string>
+    <string name="statistics_warn_temp">温度</string>
+    <string name="statistics_warn_hum">湿度</string>
+    <string name="statistics_warn_empty">无</string>
+
+    <string name="statistics_label_Info_title">标签信息</string>
+    <string name="statistics_warning_type_title">报警信息</string>
+    <string name="statistics_mark_event_title">标记事件</string>
+    <string name="statistics_label_config_title">设备配置</string>
+    <string name="statistics_label_cargo_statistics_info_title">统计信息</string>
+    <string name="statistics_label_cargo_info_title">货物信息</string>
+    <!--    statistics-->
+
+    <!--    upgrade-->
+    <string name="upgrade_did_least_version">已是最新版本</string>
+    <string name="upgrade_check_new_version" >正在检查新版本</string>
+    <string name="upgrade_dialog_tips_title" >发现新版本</string>
+    <string name="upgrade_dialog_tips_content" >是否更新应用？</string>
+    <string name="upgrade_dialog_option_cancel" >取消</string>
+    <string name="upgrade_dialog_option_update" >更新</string>
+    <string name="upgrade_app_upgrade" >APP更新"</string>
+    <string name="upgrade_downloading" >正在下载</string>
+    <string name="upgrade_download_finished" >下载完成</string>
+    <!--    upgrade-->
+
+    <!--    Permission -->
+    <string name="request_locate_permission_tips_title">请开定位权限</string>
+    <string name="request_locate_sevice_tips_title">请开启定位服务</string>
+    <string name="request_locate_fun_tips_content">开启后即可搜索和连接设备</string>
+    <string name="request_locate_fun_tips_setting">去设置</string>
+    <!--    Permission -->
+</resources>

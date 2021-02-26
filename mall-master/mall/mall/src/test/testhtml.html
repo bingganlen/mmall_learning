@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<textarea id="ddd">
+
+</textarea>
+<script>
+    let str = "&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;\n" +
+        "&lt;beans xmlns=\"http://www.springframework.org/schema/beans\"&lt;servlet-mapping&gt;\n" +
+        "        &lt;servlet-name&gt;dispatcher&lt;/servlet-name&gt;\n" +
+        "        &lt;url-pattern&gt;*.do&lt;/url-pattern&gt;\n" +
+        "    &lt;/servlet-mapping&gt;";
+    function func(str)
+    {
+        var reg = /&lt;|&gt;/g;
+        str = str.replace(reg,function($1){
+            if($1=='&lt;'){
+                return '<';
+            }else{
+                return '>';
+            }
+        });
+        return str;
+    }
+    alert(func(str));
+
+</script>
+</body>
+</html>
